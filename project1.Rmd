@@ -9,7 +9,7 @@ output:
 ### MAY 21,2020 
  
 ## Plotting Map
-```{r Leaflet}
+```{r Leaflet, echo=TRUE}
 library(magrittr)
 library(leaflet)
 my_map=leaflet()%>%
