@@ -1,0 +1,23 @@
+---
+author: "swapnil sinha"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+ 
+### MAY 21,2020 
+ 
+## Plotting Map
+```{r Leaflet}
+library(magrittr)
+library(leaflet)
+my_map=leaflet()%>%
+  addTiles()%>%
+  addMarkers(lat =28.7041,lng=77.1025,popup = "DELHI")%>%
+  addMarkers(lat =19.0760,lng=72.8777,popup = "MUMBAI")%>%
+  addMarkers(lat =8.5241,lng=76.9366,popup = "TRIVANRUM")
+my_map
+```
+
+
